@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'poppins',sans-serif;
+  box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+  background:black;
+  color: #fff;
+}
+/* #header{ */
+  .profilepic{
+
+  border-radius: 80%;
+  margin-top: 70px;
+  outline:1px solid red;
+ 
+  }
+  /* width: 100%;
+  height: 100vh;
+  background-image: url(DSC_1406.JPG);
+  border-radius: 10px;
+  position: relative;
+  background-size:contain;
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size: 500px 400px;
+ 
+   */
+
+  
+
+.container{
+  padding: 10px 8%;
+  
+
+}
+ nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ .logo{
+  width: 140px;
+ }
+ nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+ }
+ nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+ }
+ nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: .5s;
+ }
+ nav ul li a:hover::after{
+  width: 100%;
+ }
+ .head-text{
+  margin-top:20%;
+  font-size: 30px;
+ }
+ .head-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+ }
+
+
+ /* about */
+ #about{
+  padding: 87px 0px;
+  color:#ababab
+ }
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+.about-col-2 h1{
+  font-size: 55px;
+  color: white;
+}
+.tabcontent{
+  margin-top: 20px;
+}
+.tabtitle {
+  
+  margin: 23px 1px 42px;
+  
+  
+}
+.tablink{
+
+  margin-right: 270px;
+  font-size: 20px;
+  font-weight: 490;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+   
+}
+ .tablink::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: blue;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: .5s;
+  }
+.tablink::after{
+  width: 90%;
+} 
+.tabcontent{
+  /* margin:11px 0; */
+
+}
+.tabcontent ul li span{
+color: rgba(0, 0, 255, 0.87);
+font-size: 20px;
+}
+
+/* services */
+
+#services{
+  padding: 30px 0px;
+}
+.servicework{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap:40px;
+  margin-top: 55px;
+}
+.servicework div{
+  background: rgba(255, 255, 255, 0.726);
+  color: black;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 299;
+  border-radius:20px ;
+  transition: background 0.2s,transform 0.9s;
+  
+}
+.servicework div h2{
+  font-size: 30px;
+  margin-bottom: 27px;
+
+}
+.servicework div:hover{
+  background: rgba(0, 0, 255, 0.87);
+  transform: translatey(-25px);
+}
+.service{
+  margin: 30px 0px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* portfolio */
+.portfolioh1{
+  margin: 30px 0px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.worklist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap:40px;
+  margin-top: 48px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.lay h3{
+  font-size: 30px;
+  margin: 10px 2px;
+  color: white;
+}
+/* CONTACT */
+
+.leftcon{
+  flex-basis: 35%;
+}
+.rightcon{
+  flex-basis: 60%;
+}
+.leftcon p{
+  margin-top: 30px;
+}
+.leftcon p i{
+  color:darkblue;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.socialicons{
+  margin-top: 29px;
+}
+.socialicons a{
+  font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+  transition: transform 0.5s;
+}
+.socialicons a :hover{
+  color: darkblue;
+  transform: translateY(-9px);
+}
+.rightcon form{
+  width: 100%;
+   
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  background-color:white;
+  padding: 13px;
+  margin: 17px 0px;
+  color:black;
+  font-size: 20px;
+  border-radius: 50px;
+
+}
+form .butn{
+  color:white;
+  margin-top: 18px;
+  font-size: 20px;
+  background: darkblue;
+  padding: 15px 57px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.copyright{
+  width: 100%;
+  background: rgb(20, 20, 20);
+  color: white;
+  text-align: center;
+  padding: 23px 0px ;
+  margin-top: 30px;
+  font-weight: 300;
+}
